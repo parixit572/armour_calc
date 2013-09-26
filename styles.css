@@ -1,0 +1,299 @@
+/********** CSS RESET ************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: middle;
+letter-spacing: normal;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/********* START CSS ********/
+body {
+	color: #FFFFFF;
+	font-size: 17px;
+	font-family: "Nova", "Lucida Sans Unicode", Verdana, Arial, Helvetica, Clean, Sans-serif;
+	line-height: 1.4;
+	padding: 0 0 10px;
+	}
+
+/***** Hyperlinks ********************/
+a, a:visited {
+	color: #FFFFFF;
+   	font-size: 13px;
+    	text-decoration: none;
+	}
+	
+a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+	}
+	
+a img {
+	border: none;
+	opacity: 1;	
+	}
+a img:hover {
+	opacity: 1;	
+	}
+
+a:focus, a:hover, a:active {
+	outline: none;
+	}
+
+
+/***** Content ********************/
+#content {
+	background: #FFFFFF;
+	width: 440px;
+	margin: 0 0 10px 0;
+	padding: 0;
+	border: 1px solid #222222;
+	}
+
+#content a, a:visited {
+text-decoration: none;
+color: #000000;
+}
+
+.sidebar-content #content, .sidebar-sidebar-content #content {
+	float: right;
+	}
+	
+.sidebar-content #content, .content-sidebar #content {
+	background-origin: initial;
+	background-clip: initial;
+    width: 622px;
+	margin: 0px auto 10px;
+	padding-left: 4px;
+	padding-right: 4px;
+	border: 0px;
+	color: #000000;
+}
+
+
+
+#content .page {
+	margin: 0;
+	padding: 0 0 15px 0;
+	}
+
+.clear {
+	clear: both;
+	}
+	
+/***** Headlines ********************/
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #header .widget-area h4 {
+	color: #EA0000;
+	font-family: Arial, Tahoma, Verdana;
+	font-weight: normal;
+	text-decoration: none;
+	margin: 0 0 5px 0;
+	padding: 0;
+	}
+
+#content h1 {
+	text-decoration: none;
+    	color: #EA0000;
+    	font-family: 'UbuntuBold', Georgia,serif;
+	font-weight: normal;
+   	font-size: 24px;
+   	margin-bottom: 10px;
+    	//text-shadow: #000000 1px 1px 1px; /* Modern browsers */
+    	text-transform: none;
+	text-align: center;
+	line-height: 21px;
+	}
+	
+
+#content h2 {
+	text-decoration: none;
+    	color: #EA0000;
+    	font-family: 'UbuntuBold', Georgia,serif;
+	font-weight: normal;
+   	font-size: 21px;
+   	margin-bottom: 4px;
+    	//text-shadow: #000000 1px 1px 1px; /* Modern browsers */
+    	text-transform: none;
+	line-height: 23px;
+	border: 1px solid #222222;	
+	text-align: center;
+	}
+
+
+	
+#content h2 a, #content h2 a:visited {
+	text-decoration: none;
+    	color: #EA0000;
+    	font-family: 'UbuntuBold', Georgia,serif;
+	font-weight: normal;
+   	font-size: 19px;
+   	
+	margin-bottom: 4px;
+    	//text-shadow: #000000 1px 1px 1px; /* Modern browsers */
+    	text-transform: none;
+	line-height: 21px;
+	}
+	
+#content h2 a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+	}
+	
+
+	#content h3 {
+	text-decoration: none;
+    	color: #fff;
+		background:#777;
+    	font-family: 'UbuntuBold', Georgia,serif;
+	font-weight: normal;
+   	font-size: 21px;
+    padding:6px 0;
+   	margin: 0px -10px 20px;
+    text-transform: none;
+	line-height: 23px;
+	text-align: center;
+	border-radius: 9px 9px 0px 0px;
+	}
+	
+	
+#content h4, #header .widget-area h4 {
+	font-family: 'UbuntuBold', Arial, Tahoma, Verdana;
+	font-size: 14px;
+	text-align: center;
+	}
+	
+#content h5 {
+	font-size: 12px;
+	}
+	
+#content h6 {
+	font-size: 10px;
+	}
+	
+
+/***** Unordered/Ordered Lists ********************/
+#content .post ul, #content .page ul, #content .post ol, #content .page ol, #header .widget-area ul, 
+#featured-bottom ul, #featured-top ul  {
+	margin: 0;
+	padding: 0 0 15px 0;
+	}
+	
+#content .post ul li, #content .page ul li, #content .post ol li, #content .page ol li, #header 
+.widget-area ul li, #featured-bottom ul li, #featured-top ul li {
+	margin: 0 0 0 10px;
+	padding: 0;
+	}
+	
+#content .post ul li, #content .page ul li, #header .widget-area ul li, #featured-bottom ul li, 
+#featured-top ul li {
+	list-style-type: square;
+	}
+
+#content .post ul ul, #content .page ul ul, #content .post ol ol, #content .page ol ol {
+	padding: 0;
+	}
+	
+
+/*** Random Code Fixes***/
+
+#content .entry-content {
+margin: 10px 0 10px 0;
+padding: 0;
+overflow: hidden;
+}
+
+#content .entry-content a, a:visited {
+text-decoration: none;
+color: #000000;
+}
+
+
+
+/****** - END CSS  *****/
+
+#content .slide-content h3.slide-title a {
+   color:#ffffff;
+font-size:19px;
+}
+#content .slide-content h3.slide-title {
+	color:#ffffff;
+	border:none;
+	font-size:19px;
+	text-align:left;
+}
+#content .slide-content h3.slide-text {
+	font-size:15px;
+}
+
+#content h1 {
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+#content h2, #content h3, #content h4, #content h5, #content h6 {
+	border:none;
+}
+
+#content .post ul, #content .page ul, #content .post ol, #content .page ol { 
+   margin-left:30px;	
+}
+
+#content li { display: list-item }
+
+#content #accordion h3
+{
+	background:transparent;
+	border:none !important;
+	text-align:left;
+	padding-left:41px;
+}
+
+#content #accordion h3 a 
+{
+	font-size:15px;
+}
+
+#content .post {
+	padding:20px;
+}
+
+#respond {
+	padding:20px;
+}
